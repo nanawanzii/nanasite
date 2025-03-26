@@ -1,0 +1,615 @@
+/* 页面组件通用样式 */
+.page-container {
+  font-family: 'Maple Mono NF', 'JetBrains Mono NF', monospace;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 页面标题样式 */
+.page-heading {
+  font-family: 'Maple Mono NF', 'JetBrains Mono NF', monospace;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* 小节标题样式 */
+.section-subheading {
+  font-family: 'Maple Mono NF', 'JetBrains Mono NF', monospace;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+/* 段落文本样式 */
+.page-container p {
+  font-family: 'Maple Mono NF', 'JetBrains Mono NF', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+/* 列表样式 */
+.page-container ul, 
+.page-container ol {
+  font-family: 'Maple Mono NF', 'JetBrains Mono NF', monospace;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-container li {
+  margin-bottom: 0.75rem;
+  font-family: 'Maple Mono NF', 'JetBrains Mono NF', monospace;
+}
+
+/* 首页特定样式 */
+.profile-section {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.profile-image {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-right: 2rem;
+}
+
+.profile-content {
+  flex: 1;
+}
+
+.news-section {
+  background-color: rgba(15, 15, 15, 0.6);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* 添加到您的 CSS 文件末尾 */
+
+.contact-info h3 svg {
+  margin-right: 8px;
+  color: var(--primary-color, #002FA7);
+}
+
+.contact-info a svg {
+  margin-right: 4px;
+  color: var(--accent-color, #002FA7);
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: var(--text-color, #333);
+  transition: color 0.3s ease;
+  margin: 0 5px;
+}
+
+.contact-info a:hover {
+  color: var(--primary-color, #002FA7);
+}
+
+/* 底部联系方式样式 */
+.contact-footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  transition: border-color 0.3s ease;
+  /* 确保Footer显示在页面内容底部 */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact-info-small {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.contact-info-small p {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.contact-info-small a {
+  color: #002FA7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 0 5px;
+}
+
+.contact-info-small a:hover {
+  color: #f09;
+  text-decoration: underline;
+}
+
+/* 图标样式 */
+.contact-info-small i {
+  margin-right: 3px;
+  color: #002FA7;
+}
+
+.contact-info-small a i {
+  margin-right: 3px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info-small a:hover i {
+  transform: translateY(-2px);
+  color: #f09;
+}
+
+/* 间隔样式 */
+.contact-info-small a + a {
+  margin-left: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .contact-info-small {
+    font-size: 0.75rem;
+  }
+  
+  .contact-info-small p {
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* CV页面样式 */
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.cv-timeline {
+  width: 100px;
+  font-weight: bold;
+  color: #002FA7;
+  flex-shrink: 0;
+}
+
+.cv-content {
+  padding-left: 1.5rem;
+  position: relative;
+  border-left: 2px solid rgba(0, 47, 167, 0.3);
+}
+
+.cv-content h4 {
+  margin: 0 0 0.5rem;
+  color: var(--text-primary); /* 修改这里，从固定颜色 #ffffff 改为变量 */
+  transition: color 0.3s ease; /* 添加过渡效果 */
+  font-size: 1.1rem;
+}
+
+.cv-content p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.skills-list {
+  padding-left: 1rem;
+  list-style-type: circle;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* 技能图标样式 */
+.software-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: var(--card-bg, #1e1e1e);
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 47, 167, 0.3);
+}
+
+.skill-item i {
+  margin-right: 5px;
+  font-size: 1.1em;
+  color: var(--accent-color, #002FA7);
+}
+
+/* R 图标 */
+.skill-item .fa-r-project {
+  color: #276DC3;
+}
+
+/* Julia 图标 */
+.skill-item .fa-calculator {
+  color: #9558B2;
+}
+
+/* Python 图标 */
+.skill-item .fa-python {
+  color: #3776AB;
+}
+
+/* Stata 图标 */
+.skill-item .fa-chart-bar {
+  color: #1A5276;
+}
+
+/* LaTeX 图标 */
+.skill-item .fa-file-code {
+  color: #008080;
+}
+
+.skill-item svg {
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+/* 图标特定颜色 */
+.skill-item svg[data-icon="r-project"] {
+  color: #276DC3;
+}
+
+.skill-item svg[data-icon="calculator"] {
+  color: #9558B2;  /* Julia 的品牌色 */
+}
+
+.skill-item svg[data-icon="python"] {
+  color: #3776AB;
+}
+
+.skill-item svg[data-icon="file-code"] {
+  color: #008080;  /* LaTeX 的品牌色 */
+}
+
+/* LaTeX公式样式 */
+.latex-examples {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.latex-examples h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.math-formula {
+  margin: 1.2rem 0;
+}
+
+.math-formula p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* 公式样式优化 */
+.katex-display {
+  padding: 1rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="dark"] .katex-display {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.katex {
+  font-size: 1.1em;
+}
+
+/* 在技能项中使用的行内LaTeX */
+.skill-item .katex {
+  font-size: 1em;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 增强研究项目的视觉效果 */
+.cv-section .cv-item:hover .cv-content {
+  border-left-color: var(--accent-color);
+}
+
+.cv-section .cv-item:hover .cv-timeline {
+  color: var(--accent-color);
+}
+
+/* 进行中的研究项目样式 */
+.cv-item .cv-timeline:contains("In Progress") {
+  color: #a5410d; /* 使用橙色标识进行中的项目 */
+  position: relative;
+}
+
+.cv-item .cv-timeline:contains("In Progress")::after {
+  content: "●";
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.8em;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* 正在进行的研究项目样式 */
+.ongoing-research {
+  position: relative;
+  background-color: rgba(0, 47, 167, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 3px 15px rgba(0, 47, 167, 0.1);
+  border-left: 4px solid #002FA7;
+}
+
+.ongoing-research::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #002FA7;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ongoing-research .section-subheading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.ongoing-research .progress-icon {
+  color: #002FA7;
+  font-size: 1.2rem;
+}
+
+.cv-timeline.progress {
+  color: #a5410d;
+  font-weight: bold;
+  position: relative;
+}
+
+.cv-timeline.progress::after {
+  content: "●";
+  display: inline-block;
+  margin-left: 5px;
+  color: #a5410d;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+/* 专业经验图标样式 */
+.section-icon {
+  margin-right: 10px;
+  color: var(--accent-color);
+}
+
+/* 专业经验卡片悬停效果 */
+.cv-section:not(.ongoing-research) .cv-item:hover {
+  background-color: rgba(0, 47, 167, 0.03);
+  border-radius: 8px;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* 推荐人部分样式 */
+.references-section {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-color);
+}
+
+.references-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.reference-item {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 3px solid var(--accent-color);
+}
+
+.reference-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 47, 167, 0.15);
+}
+
+.reference-item h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.reference-item p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.reference-item i {
+  margin-right: 0.5rem;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .references-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Under Construction Page Styles */
+.under-construction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.construction-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.construction-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin: 0 1rem;
+  animation: bounce 2s infinite alternate;
+}
+
+.construction-title {
+  font-size: 3rem;
+  background: linear-gradient(45deg, var(--accent-color), #f09);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.construction-content {
+  max-width: 600px;
+}
+
+.construction-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.warning-icon {
+  color: #ffcc00;
+  margin-right: 0.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+.construction-submessage {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.construction-animation {
+  margin-top: 3rem;
+}
+
+.construction-animation .loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 6px solid rgba(0, 47, 167, 0.2);
+  border-radius: 50%;
+  border-top-color: var(--accent-color);
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
