@@ -152,6 +152,26 @@ const Navbar = () => {
       <TopBar theme={theme}>
         <Logo theme={theme}>
           <Link to="/">ZI WANG</Link>
+          <span 
+            className="navbar-art"
+            style={{
+              fontSize: '0.65rem', // 稍微增大字体
+              fontStyle: 'italic',
+              marginLeft: '10px',
+              opacity: theme === 'dark' ? 0.6 : 0, // 保持透明度为60%
+              color: 'rgba(255, 255, 255, 0.5)',
+              fontWeight: 'normal',
+              verticalAlign: 'middle',
+              transform: 'translateY(2px)',
+              fontFamily: '"Sriracha", "Brush Script MT", cursive', // 使用手写风格字体
+              position: 'relative',
+              display: 'inline-block',
+              userSelect: 'none',
+              pointerEvents: 'none'
+            }}
+          >
+            Ceci n'est pas un site web
+          </span>
         </Logo>
         <ThemeToggle />
       </TopBar>

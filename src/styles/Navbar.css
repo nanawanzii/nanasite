@@ -1,0 +1,29 @@
+/* 马格利特风格的艺术文本 */
+.navbar-art {
+  font-family: 'Sriracha', 'Brush Script MT', cursive !important; /* 使用手写风格字体 */
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.65rem !important; /* 稍微增大字体 */
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  vertical-align: middle;
+  font-weight: normal;
+  transform: translateY(2px);
+} 
+
+/* 只在黑夜模式下显示 - 保持透明度为60% */
+[data-theme='dark'] .navbar-art {
+  opacity: 0.6 !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 在小屏幕上隐藏艺术文本 */
+@media (max-width: 768px) {
+  .navbar-art {
+    display: none !important;
+  }
+}
