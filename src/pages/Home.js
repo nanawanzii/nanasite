@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/Pages.css';
 import PageFooter from '../components/PageFooter';
+// 导入FontAwesome组件
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   return (
@@ -27,6 +30,15 @@ const Home = () => {
           <p>
             You can find my CV, research experience, and some other interesting things (perhaps) in this website!
           </p>
+          
+          <a 
+            href="https://www.dropbox.com/preview/Zi%20Wang%20CV.pdf?context=content_suggestions&preview=Zi+Wang+CV.pdf&role=personal" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="cv-button"
+          >
+            <FontAwesomeIcon icon={faDownload} className="cv-icon" /> Download CV
+          </a>
         </div>
       </section>
       
