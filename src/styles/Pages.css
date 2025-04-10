@@ -613,3 +613,34 @@
     opacity: 0.6;
   }
 }
+
+/* CV按钮样式 */
+.cv-button {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  background-color: #002FA7; /* 克莱因蓝 */
+  border-radius: 30px; /* 创建较小的椭圆形状 */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px 2px rgba(0, 47, 167, 0.5); /* 减小光效范围，只在周边发光 */
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.cv-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px 3px rgba(0, 47, 167, 0.6); /* 悬停时略微增强发光效果 */
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cv-button:active {
+  transform: translateY(1px);
+}
+
+.cv-icon {
+  margin-right: 8px;
+}
