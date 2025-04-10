@@ -32,7 +32,7 @@ const Home = () => {
           </p>
           
           <a 
-            href="https://www.dropbox.com/https://www.dropbox.com/scl/fi/9pakyfuel03ee298dol85/Zi-Wang-CV.pdf?rlkey=taby9j87zy8z12w2lquv5ewpa&st=hv91rifv&dl=0/Zi%20Wang%20CV.pdf?context=content_suggestions&preview=Zi+Wang+CV.pdf&role=personal" 
+            href="https://www.dropbox.com/scl/fi/9pakyfuel03ee298dol85/Zi-Wang-CV.pdf?rlkey=taby9j87zy8z12w2lquv5ewpa&e=1&st=hv91rifv&dl=0" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="cv-button"
